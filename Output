@@ -1,0 +1,7 @@
+#output
+Enter a string: malayalam
+This is a palindrome!!
+Do you want to check more Palindrome(Y/N): y
+Enter a string: madam
+This is a palindrome!!
+Do you want to check more Palindrome(Y/N): n
