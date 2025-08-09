@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool is_Palindrome(string str){
+    string reversed;
+    for(int i = str.length()-1;i>=0;i--){
+        reversed += str[i];
+    }return str == reversed;
+}
+int main() {
+    string str, reversed,recheck;
+    do{
+        cout << "Enter a string: ";
+        getline(cin, str);  // Reads full line
+        
+        // Check for palindrome
+        if (is_Palindrome(str)) {
+            cout << "This is a palindrome!!" << endl;
+        } else {
+            cout << "Not a palindrome." << endl;
+        }
+        
+        cout <<"Do you want to check more Palindrome(Y/N): ";
+        getline(cin,recheck);
+    }while(recheck == "y"||recheck =="Y");
+    return 0;
+}
